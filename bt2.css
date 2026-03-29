@@ -1,0 +1,511 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E4D7C7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-70 {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-header {
+    background-color: #9a0b0b;
+    width: 100%;
+}
+
+.header-topbar {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    height: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.topbar-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 28px;
+    width: 100%;
+}
+
+.topbar-links li {
+    padding: 0 8px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.topbar-links li:last-child {
+    border-right: none;
+}
+
+.topbar-links li.social {
+    padding: 0 5px;
+}
+
+.topbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+}
+
+.topbar-links a:hover {
+    text-decoration: underline;
+}
+
+.header-center {
+    height: 90px;
+}
+
+.header-center .container-70 {
+    height: 100%;
+}
+
+.site-logo {
+    color: white;
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+
+.search-input {
+    width: 220px;
+    height: 24px;
+    padding: 0 8px;
+    border: 1px solid #ccc;
+    border-right: none;
+    font-size: 13px;
+    outline: none;
+    border-radius: 0;
+}
+
+.search-btn {
+    height: 24px;
+    padding: 0 12px;
+    background: #e8e0d5;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+.header-nav {
+    background-color: rgba(0, 0, 0, 0.28);
+    height: 42px;
+}
+
+.header-nav .container-70 {
+    height: 100%;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-menu li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-menu li:last-child {
+    border-right: none;
+}
+
+.nav-menu li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    font-family: Arial, sans-serif;
+}
+
+.header-banner {
+    background-color: #3B3331;
+    width: 100%;
+}
+
+.header-banner img {
+    display: block;
+    width: 100%;
+}
+
+.main-content {
+    background-color: #E4D7C7;
+    padding: 30px   0;
+    background-image: url('SeattleUni\SeatleUni\media\home-audienceAndBoilerplateBackground.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.main-content .container-70 {
+    padding: 20px;
+}
+
+.content-row {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    overflow: visible;
+}
+
+.audience-sidebar {
+    width: 210px;
+    min-width: 210px;
+    flex-shrink: 0;
+    background-color: #817468;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: visible;
+}
+
+.audience-item {
+    flex: 1;
+    min-height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: #D6CDC2;
+    cursor: pointer;
+    padding: 10px 14px;
+    text-align: center;
+    overflow: visible;
+}
+
+.audience-item:last-child {
+    border-bottom: none;
+}
+
+.audience-item:hover {
+    background-color: #6e6158;
+    color: #fff;
+}
+
+.audience-item.active {
+    background-color: #6e6158;
+    color: white;
+    font-weight: 600;
+}
+
+.audience-item span {
+    position: relative;
+    z-index: 5;
+}
+
+.audience-arrow {
+    display: block;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(100% + 40px);
+    height: 34px;
+    object-fit: fill;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.content-col {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgba(0, 0, 0, 0.10);
+    background-color: rgba(255, 255, 255, 0.55);
+}
+
+.content-col:last-child {
+    border-right: none;
+}
+
+.col-head {
+    background-color: #7a6e64;
+    color: white;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    border-bottom: 2px solid #E4D7C7;
+    white-space: nowrap;
+}
+
+.col-body {
+    padding: 10px 12px;
+    font-size: 13px;
+    color: #2a2a2a;
+    flex: 1;
+}
+
+.col-body p {
+    line-height: 1.45;
+    margin-bottom: 6px;
+}
+
+.learn-more {
+    color: #8b0000;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.learn-more:hover {
+    text-decoration: underline;
+}
+
+.event-entry {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.event-entry:last-of-type {
+    border-bottom: none;
+}
+
+.event-entry strong {
+    display: block;
+    font-size: 13px;
+    color: #222;
+}
+
+.event-entry span {
+    display: block;
+    font-size: 12px;
+    color: #444;
+    line-height: 1.4;
+}
+
+.event-entry em {
+    display: block;
+    font-size: 12px;
+    color: #555;
+    font-style: italic;
+}
+
+.cal-link {
+    color: #333;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.cal-link:hover {
+    color: #8b0000;
+}
+
+.apply-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.apply-links li {
+    padding: 9px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    font-size: 13px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.apply-links li:last-child {
+    border-bottom: none;
+}
+
+.apply-links a {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.apply-links a:hover {
+    color: #8b0000;
+    text-decoration: underline;
+}
+
+.about-section {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.about-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #5f5d59;
+    margin-bottom: 12px;
+    margin-top: 10px;
+}
+
+.about-text {
+    font-size: 13px;
+    color: #2a2a2a;
+    line-height: 1.65;
+    margin-bottom: 10px;
+}
+
+.about-link {
+    color: #8b0000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.badge-img {
+    width: 160px;
+    height: auto;
+}
+
+.site-footer {
+    background-color: #7D0711;
+    width: 100%;
+    padding: 0;
+}
+
+.site-footer .container-70 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-columns {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding-bottom: 10px;
+}
+
+.footer-col {
+    padding: 10px 12px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-col:last-child {
+    border-right: none;
+}
+
+.footer-heading {
+    color: white;
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+    font-size: 17px;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    padding-bottom: 6px;
+    margin-bottom: 8px;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list li {
+    padding: 3px 0;
+}
+
+.footer-list a {
+    color: #e8d8d8;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+}
+
+.footer-list a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-contact-wrapper {
+    background-image: url('E:/UEH/Docs/ptud web/Bài tập 2/SeattleUni/SeatleUni/media/footerBackground.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    margin-top: 20px;
+}
+
+.footer-contact-inner {
+    padding: 30px 0;
+    /* Tăng padding để tạo không gian thoáng hơn */
+}
+
+.contact-info p {
+    color: #f0e0e0;
+    font-size: 13px;
+    margin-bottom: 2px;
+    line-height: 1.5;
+    padding-left: 0;
+    /* Đảm bảo không có padding thừa làm tràn chữ */
+}
+
+.contact-link {
+    color: #f0e0e0;
+    text-decoration: underline;
+}
+
+.bottom-bar {
+    background-color: #534741;
+    width: 100%;
+}
+
+.bottom-inner {
+    background-color: #93867B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 10px;
+    position: relative;
+    font-size: 11px;
+    font-family: Arial, sans-serif;
+    color: #2f2822;
+}
+
+.bottom-links a {
+    color: #28201b;
+    text-decoration: underline;
+    font-size: 11px;
+}
+
+.bottom-links a:hover {
+    color: #000;
+}
+
+.bottom-copy {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 11px;
+    color: #2f2822;
+}
